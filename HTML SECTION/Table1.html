@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Student Marks Sheet</title>
+        <!--
+        <style>
+            #t01 tr:nth-child(even){
+                background-color:DodgerBlue;
+                text-align:center;
+
+
+            }
+
+            #t01 tr:nth-child(odd){
+                background-color:aquamarine;
+                text-align:center;
+            }
+
+            #t01 thead{
+                background-color:palegoldenrod;
+            }
+        </style>
+    -->
+        <style>
+            
+            table{
+                background-color:Tomato;
+                border:2px solid black;
+                padding:15px;
+                border-spacing:10px; 
+
+            }
+
+            #t01 tr:nth-child(even){
+                background-color:DodgerBlue;
+                
+            }
+
+            #t01 tr:nth-child(odd){
+                background-color:aqua;
+                
+            }
+
+            #t01 td:nth-child(even){
+                border:2px solid Black;
+            }
+
+            #t01 td:nth-child(odd){
+                border:10px solid #eee;
+                text-align:center;
+            }
+
+            td,th{
+                color:Sienna;
+            }
+
+            #t01 th{
+                border:5px solid Dodgerblue;
+            }
+
+            /* THE THING TO BE NOTED IN THE ABOVE IF 
+            thead is given in place of th then it will not work 
+            I think in order to give border you need give td or th
+            And yes also if you wish to give background color then
+            that you can execute with tr .Ofcourse you can use td and 
+            th as well but dont use thead or tbody or tfoot ,
+            what I found they dont work well. 
+            
+            And yes if you want to give spaces in between cell border 
+            then use border-spacing it will work ,check for what I
+            have demonstrated: NaN;
+            */
+
+        </style>
+    </head>
+    <body>
+        <header style="font-size:22px;text-align:center;margin:30px;"><u>STUDENT MARKS SHEET</u></header>       
+        <section>
+            <table id="t01" width=100%>
+              <thead>
+                  <th style="background-color:palegoldenrod;">SUBJECT</th>
+                  <th>MARKS</th>
+                  <th>GRADE</th>
+              </thead>
+
+              <tbody>
+                   <tr>
+                       <td>PHYSICS</td>
+                       <td>90</td>
+                       <td>O</td>
+                   </tr> 
+                   <tr>
+                       <td>CHEMISTRY</td>
+                       <td>87</td>
+                       <td>E</td>
+                   </tr>
+
+                   <tr>
+                       <td>MATHEMATICS</td>
+                       <td>95</td>
+                       <td>O</td>
+                   </tr>
+                   <tr style="text-align:right;background-color:Lightgreen;"> <!--See I have written
+                                                  text align here and it 
+                                                   doesn't work.That means you
+                                                have to write in td .But yes 
+                                                background color works-->
+                       <td>ENGLISH</td>
+                       <td style=>79</td>
+                       <td>A</td>
+                   </tr>
+                   <tr>
+                       <td>COMPUTER SCIENCE</td>
+                       <td>92</td>
+                       <td>O</td>
+                   </tr>
+              </tbody>
+
+              <tfoot>
+                  <tr>
+                      <th colspan=2>REMARKS :</th>
+                      <th>PASS</th>
+                  </tr>
+              </tfoot>
+              </table>
+        </section>
+        <p>
+            This is the progress you made in English::
+            <progress value="79" max="100"></progress>
+            <br>
+            <hr>
+            This is the progress you made in PHYSICS::
+            <progress value="90" max="100"></progress>
+            <br>
+            <hr>
+            This is the progress you made in MATHS::
+            <progress value=95 max=100></progress>
+        </p>
+    </body>
+</html>
