@@ -1,0 +1,39 @@
+*{
+    *font-size:16px;
+}
+
+.img_outer{
+    background-image:url("./Images/Photographer.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:500px;
+    background-position:center;
+    background-attachment:scroll;
+    position : relative;
+}
+
+.img_inner{
+    position:absolute;
+    top:50%;
+    left:50%;
+    color:white;
+    text-align:center;
+    transform:translate(-50%,-50%);
+}
+
+.outer_content{
+    padding-top:40px;
+    padding-bottom:20px;
+    font-size:17px;
+    border:3px solid tomato;
+    max-width:100%;
+    margin-top:30px;
+    text-align:center;
+}
+
+.outer_content{
+    outline-color:aqua;
+    outline-width:2px;
+    outline-style:solid;
+    outline-offset:5px;
+}
