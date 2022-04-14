@@ -14,7 +14,7 @@
     justify-content:center; /*It is working fine when 
                         flex-direction:row;  */
 
-    /*align-items:center;   It is not working when flex-direction:row; */
+    /*align-items:center;   It is not working when flex-direction:row; Fix :: Give Some height to the container */
     
 }
 
@@ -33,7 +33,8 @@
                         to middle . But we only want the text to be at middle
                         and the container should spread. */
 
-    /*justify-content:center; It is not working when flex-direction:column; */
+    /*justify-content:center; It is not working when flex-direction:column; 
+    May be:: There is one element through not able to use ::properties with the above - center;space-between;space-around; */
     
     margin-top:0px;
     background-color:burlywood;
