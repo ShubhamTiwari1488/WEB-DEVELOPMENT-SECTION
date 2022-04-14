@@ -1,0 +1,49 @@
+.main{
+    border:2px solid red;
+
+    border-bottom-width:0px;
+}
+
+.Inner1{
+    border:2px solid blue;
+    display:flex;
+    flex-direction:row;
+    max-width:100%;
+    margin-top:50px;
+
+    justify-content:center; /*It is working fine when 
+                        flex-direction:row;  */
+
+    /*align-items:center;   It is not working when flex-direction:row; */
+    
+}
+
+.Inner1 div{
+    width:200px;
+    text-align:center;
+}
+
+.header-main{
+    display:flex;
+    flex-direction:column;
+    
+    text-align:center;  
+
+    /*align-items:center;  Using this will squish the container
+                        to middle . But we only want the text to be at middle
+                        and the container should spread. */
+
+    /*justify-content:center; It is not working when flex-direction:column; */
+    
+    margin-top:0px;
+    background-color:burlywood;
+}
+
+.header-main div{
+    
+    padding-top:10px;
+    padding-bottom:10px;
+    border-bottom-style:solid;
+    border-bottom-width:2px;
+    border-bottom-color:brown;
+}
