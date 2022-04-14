@@ -1,0 +1,99 @@
+.BackgroundImage-outer{
+    background-image:url("./Images/photographer.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    height:500px;
+    position:relative;
+}
+
+.BackgroundImage-Inner1{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    text-align:center;
+    font-size:30px;
+    border :2px solid white;
+}
+
+.BackgroundImage-nav{
+    position:absolute;
+    color:black;
+    background-color:bisque;
+    bottom:0;
+    width:100%;
+    left:50%;
+    transform:translate(-50%,100%);
+    
+}
+
+.BackgroundImage-nav div{
+  /*  padding:15px 20px 20px 15px;*/
+   
+    text-align:center;
+    padding:10px 0 10px 0;
+    border:2px solid white;
+    width:100%;
+}
+
+.hidden{
+    visibility:hidden;
+    height:0;
+}
+    
+
+.navlinks a:link , a:visited{
+    color:black;
+    text-decoration:none;
+}
+
+.navlinks a:hover , a:active , .BackgroundImage-nav div:hover{
+    color:chocolate;
+    background-color:cornsilk;
+}
+
+.Images{
+    margin-top:200px;
+    width:100%;
+}
+
+.Images img{
+    display:block;
+    margin:auto;
+    margin-bottom:50px;
+    width:85%;
+    height:auto;
+}
+
+
+@media only screen and (min-width:900px)
+{
+    .hidden{
+        visibility:visible;
+        height:50px;
+        padding:0 10px 0 10px;
+    }
+
+    .BackgroundImage-nav{
+        position:absolute;
+        color:black;
+        background-color:bisque;
+        bottom:0;
+        left:50%;
+        transform:translate(-50%,40%);
+        display:flex;
+        flex-direction:row;
+        width:300px;
+        align-items:center;
+    }
+    
+    .BackgroundImage-nav div{
+      /*  padding:15px 20px 20px 15px;*/
+        width:300px;
+        text-align:center;
+        padding:10px 0 10px 0;
+        border:1.6px solid white; 
+    }
+}
